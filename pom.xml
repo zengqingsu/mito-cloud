@@ -21,6 +21,11 @@
         <module>mito-eureka</module>
         <module>mito-admin</module>
         <module>mito-config</module>
+        <module>mito-auth</module>
+        <module>mito-gateway</module>
+        <module>mito-pay</module>
+        <module>mito-wechat</module>
+        <module>mito-zipkin</module>
     </modules>
 
     <properties>

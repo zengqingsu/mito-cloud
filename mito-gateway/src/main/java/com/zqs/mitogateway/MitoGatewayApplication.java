@@ -1,17 +1,17 @@
-package com.zqs.mitoconfig;
+package com.zqs.mitogateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EnableDiscoveryClient
-@EnableConfigServer
 @SpringBootApplication
-public class MitoConfigApplication {
+@EnableDiscoveryClient
+@EnableZuulProxy
+public class MitoGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MitoConfigApplication.class, args);
+		SpringApplication.run(MitoGatewayApplication.class, args);
 	}
 
 }
